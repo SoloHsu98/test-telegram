@@ -99,11 +99,12 @@ const TestPage = () => {
           fgColor="#ffffff"
           style={{
             width: "50px",
-            height: "0px",
+            height: "30px",
             position: "absolute",
             zIndex: 1,
             top: "0",
             left: "0",
+            border: "1px solid green",
           }}
         />
       </div>
