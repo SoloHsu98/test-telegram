@@ -113,9 +113,11 @@ a {
   border: 1px solid red;
   width: 200px;
   height: 200px;
+  position: relative;
 
   iframe {
     width: 10px;
     height: 10px;
+    position: absolute !important;
   }
 }
