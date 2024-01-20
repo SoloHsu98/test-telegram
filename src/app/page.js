@@ -4,6 +4,7 @@ import { LoginButton } from "@telegram-auth/react";
 import { useRouter } from "next/navigation";
 
 import React, { useEffect } from "react";
+import { SocialIcon } from "react-social-icons";
 import TelegramLoginButton from "react-telegram-login";
 const TestPage = () => {
   const router = useRouter();
