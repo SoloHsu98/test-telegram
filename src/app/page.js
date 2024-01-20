@@ -95,7 +95,7 @@ const TestPage = () => {
         <SocialIcon
           network="telegram" // Pass the social URL dynamically
           label="social url"
-          className="cursor-pointer"
+          className="cursor-pointer z-1"
           fgColor="#ffffff"
           style={{
             height: 50,
