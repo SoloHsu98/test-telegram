@@ -50,17 +50,17 @@ const TestPage = () => {
       >
         Login hello
       </button> */}
-
-      <LoginButton
-        usePic={false}
-        botUsername="solo_telegram_bot"
-        onAuthCallback={(data) => {
-          console.log(data);
-          // call your backend here to validate the data and sign in the user
-        }}
-      >
-        <span>hello</span>
-      </LoginButton>
+      <div className="wrapper">
+        <LoginButton
+          usePic={false}
+          botUsername="solo_telegram_bot"
+          onAuthCallback={(data) => {
+            console.log(data);
+            // call your backend here to validate the data and sign in the user
+          }}
+          className="telegram-btn"
+        />
+      </div>
       {/* <TelegramLoginButton
         dataOnauth={handleTelegramResponse}
         botName="solo_telegram_bot"

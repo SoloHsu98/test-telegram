@@ -105,3 +105,12 @@ a {
     color-scheme: dark;
   }
 }
+
+.telegram-btn {
+  display: none;
+}
+.wrapper {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+}
