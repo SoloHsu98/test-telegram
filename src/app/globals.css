@@ -118,6 +118,11 @@ a {
 
 .sec-btn {
   position: absolute;
+  .tgme_widget_login.large button.tgme_widget_login_button {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+  }
 
   iframe {
     width: 50px !important;
