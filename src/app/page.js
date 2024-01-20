@@ -89,6 +89,7 @@ const TestPage = () => {
         <TelegramLoginButton
           dataOnauth={handleTelegramResponse}
           botName="solo_telegram_bot"
+          className="sec-btn"
         />
 
         <SocialIcon

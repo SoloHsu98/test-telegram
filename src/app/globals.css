@@ -115,3 +115,8 @@ a {
   height: 200px;
   position: relative;
 }
+
+.sec-btn {
+  position: absolute;
+  width: 100px;
+}
