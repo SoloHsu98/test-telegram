@@ -125,6 +125,7 @@ a {
     z-index: 3 !important;
     top: 0 !important;
     left: 0 !important;
+    position: absolute;
   }
 }
 .tgme_widget_login_user_photo {
