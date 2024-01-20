@@ -68,6 +68,8 @@ const TestPage = () => {
           style={{
             height: 50,
             width: 50,
+            zIndex: 1,
+            position: "absolute",
           }}
           botUsername="solo_telegram_bot"
           onAuthCallback={(data) => {
@@ -76,10 +78,12 @@ const TestPage = () => {
           }}
         >
           <LoginButton
+            className="first-btn"
             usePic={false}
             botUsername="solo_telegram_bot"
             onAuthCallback={(data) => {
               console.log(data);
+
               // call your backend here to validate the data and sign in the user
             }}
           />

@@ -115,11 +115,11 @@ a {
   height: 200px;
   position: relative;
 }
-
-.sec-btn {
+.first-btn {
   position: absolute;
-  top: 0;
-  left: 0;
+  z-index: 10;
+}
+.sec-btn {
   .tgme_widget_login.large button.tgme_widget_login_button {
     width: 50px !important;
     height: 50px !important;
@@ -138,6 +138,11 @@ a {
     left: 0 !important;
     position: absolute;
 
+    .btn {
+      width: 50px !important;
+      height: 50px !important;
+      border-radius: 50% !important;
+    }
     button {
       width: 50px !important;
       height: 50px !important;
