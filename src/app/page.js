@@ -1,95 +1,73 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 
-export default function Home() {
+import { LoginButton } from "@telegram-auth/react";
+import { useRouter } from "next/navigation";
+
+import React, { useEffect } from "react";
+import TelegramLoginButton from "react-telegram-login";
+const TestPage = () => {
+  const router = useRouter();
+
+  const handleLogin = async () => {
+    // await login();
+    router.push("tg://user?id=1621433445");
+  };
+  // const validator = new AuthDataValidator({
+  //   botToken: "6379860500:AAF87f4STd4KT0lC0fHJ5hgDHTzVlYRHt3U",
+  // });
+
+  // const data = urlStrToAuthDataMap(request.url);
+
+  // try {
+  //   const user = validator.validate(data);
+
+  //   // The data is now valid and you can sign in the user.
+
+  //   console.log(user);
+  // } catch (error) {
+  //   console.error(error);
+  // }
+  const handleTelegramResponse = (response) => {
+    console.log(response);
+  };
+
+  // useEffect(() => {
+  //   // Get the button element by its ID
+  //   var button = document.getElementsByClassName("tgme_widget_login_button");
+
+  //   // Remove all children nodes from the button
+  //   while (button?.firstChild) {
+  //     button?.removeChild(button.firstChild);
+  //   }
+  // }, []);
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className="p-4 bg-white">
+      {/* <button
+        type="button"
+        onClick={handleLogin}
+        className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        Login hello
+      </button> */}
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <LoginButton
+        usePic={false}
+        botUsername="college_dao_bot"
+        onAuthCallback={(data) => {
+          console.log(data);
+          // call your backend here to validate the data and sign in the user
+        }}
+      >
+        <span>hello</span>
+      </LoginButton>
+      <TelegramLoginButton
+        dataOnauth={handleTelegramResponse}
+        botName="college_dao_bot"
+      >
+        <span>hello</span>
+      </TelegramLoginButton>
+    </div>
   );
-}
+};
+
+export default TestPage;
