@@ -129,9 +129,12 @@ a {
   }
 }
 .tgme_widget_login_user_photo {
-  display: none;
+  display: none !important;
 }
 .tgme_widget_login_button {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
   span {
     display: none;
   }
