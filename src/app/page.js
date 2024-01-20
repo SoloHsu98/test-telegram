@@ -58,7 +58,6 @@ const TestPage = () => {
             console.log(data);
             // call your backend here to validate the data and sign in the user
           }}
-          className="telegram-btn"
         />
       </div>
       {/* <TelegramLoginButton
