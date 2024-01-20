@@ -59,6 +59,16 @@ const TestPage = () => {
             // call your backend here to validate the data and sign in the user
           }}
         />
+        <SocialIcon
+          network="telegram" // Pass the social URL dynamically
+          label="social url"
+          className="cursor-pointer"
+          fgColor="#ffffff"
+          style={{
+            height: 50,
+            width: 50,
+          }}
+        />
       </div>
       <div className="wrapper">
         <TelegramLoginButton
