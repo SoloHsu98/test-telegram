@@ -123,7 +123,11 @@ a {
     height: 50px !important;
     border-radius: 50% !important;
   }
-
+  .btn {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+  }
   iframe {
     width: 50px !important;
     height: 50px !important;
