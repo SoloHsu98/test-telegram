@@ -31,15 +31,16 @@ const TestPage = () => {
     console.log(response);
   };
 
-  // useEffect(() => {
-  //   // Get the button element by its ID
-  //   var button = document.getElementsByClassName("tgme_widget_login_button");
+  useEffect(() => {
+    // Get the button element by its ID
+    var button = document.getElementsByClassName("tgme_widget_login_button");
 
-  //   // Remove all children nodes from the button
-  //   while (button?.firstChild) {
-  //     button?.removeChild(button.firstChild);
-  //   }
-  // }, []);
+    console.log("button", button);
+    // Remove all children nodes from the button
+    // while (button?.firstChild) {
+    //   button?.removeChild(button.firstChild);
+    // }
+  }, []);
   return (
     <div className="p-4 bg-white">
       {/* <button
@@ -60,12 +61,12 @@ const TestPage = () => {
       >
         <span>hello</span>
       </LoginButton>
-      <TelegramLoginButton
+      {/* <TelegramLoginButton
         dataOnauth={handleTelegramResponse}
         botName="solo_telegram_bot"
       >
         <span>hello</span>
-      </TelegramLoginButton>
+      </TelegramLoginButton> */}
     </div>
   );
 };
