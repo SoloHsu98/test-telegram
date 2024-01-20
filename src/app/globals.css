@@ -118,5 +118,16 @@ a {
 
 .sec-btn {
   position: absolute;
-  width: 100px;
+
+  iframe {
+    width: 100px;
+  }
+}
+.tgme_widget_login_user_photo {
+  display: none;
+}
+.tgme_widget_login_button {
+  span {
+    display: none;
+  }
 }
