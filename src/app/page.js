@@ -52,7 +52,7 @@ const TestPage = () => {
 
       <LoginButton
         usePic={false}
-        botUsername="college_dao_bot"
+        botUsername="solo_telegram_bot"
         onAuthCallback={(data) => {
           console.log(data);
           // call your backend here to validate the data and sign in the user
@@ -62,7 +62,7 @@ const TestPage = () => {
       </LoginButton>
       <TelegramLoginButton
         dataOnauth={handleTelegramResponse}
-        botName="college_dao_bot"
+        botName="solo_telegram_bot"
       >
         <span>hello</span>
       </TelegramLoginButton>
