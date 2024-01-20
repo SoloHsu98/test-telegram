@@ -98,7 +98,6 @@ const TestPage = () => {
           className="cursor-pointer z-1"
           fgColor="#ffffff"
           style={{
-            height: "50px",
             width: "50px",
             position: "absolute",
             zIndex: 1,

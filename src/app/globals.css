@@ -127,6 +127,16 @@ a {
     left: 0 !important;
     position: absolute;
   }
+  button {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+  }
+  .tgme_widget_login_button {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+  }
 }
 .tgme_widget_login_user_photo {
   display: none !important;
@@ -138,4 +148,8 @@ a {
   span {
     display: none;
   }
+}
+
+.tgme_widget_login_button_icon {
+  width: 30px !important;
 }
