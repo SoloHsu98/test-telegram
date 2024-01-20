@@ -64,9 +64,7 @@ const TestPage = () => {
         <TelegramLoginButton
           dataOnauth={handleTelegramResponse}
           botName="solo_telegram_bot"
-        >
-          <span>hello</span>
-        </TelegramLoginButton>
+        />
       </div>
     </div>
   );
