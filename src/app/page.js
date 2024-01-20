@@ -91,6 +91,21 @@ const TestPage = () => {
           botName="solo_telegram_bot"
           className="sec-btn"
         />
+
+        <SocialIcon
+          network="telegram" // Pass the social URL dynamically
+          label="social url"
+          className="cursor-pointer z-1"
+          fgColor="#ffffff"
+          style={{
+            height: "50px",
+            width: "50px",
+            position: "absolute",
+            zIndex: 1,
+            top: "0",
+            left: "0",
+          }}
+        />
       </div>
     </div>
   );
