@@ -69,12 +69,32 @@ const TestPage = () => {
             height: 50,
             width: 50,
           }}
-        />
+        >
+          <LoginButton
+            usePic={false}
+            botUsername="solo_telegram_bot"
+            onAuthCallback={(data) => {
+              console.log(data);
+              // call your backend here to validate the data and sign in the user
+            }}
+          />
+        </SocialIcon>
       </div>
       <div className="wrapper">
         <TelegramLoginButton
           dataOnauth={handleTelegramResponse}
           botName="solo_telegram_bot"
+        />
+
+        <SocialIcon
+          network="telegram" // Pass the social URL dynamically
+          label="social url"
+          className="cursor-pointer"
+          fgColor="#ffffff"
+          style={{
+            height: 50,
+            width: 50,
+          }}
         />
       </div>
     </div>
