@@ -120,8 +120,11 @@ a {
   position: absolute;
 
   iframe {
-    width: 100px !important;
-    z-index: 3;
+    width: 50px !important;
+    height: 50px !important;
+    z-index: 3 !important;
+    top: 0 !important;
+    left: 0 !important;
   }
 }
 .tgme_widget_login_user_photo {
