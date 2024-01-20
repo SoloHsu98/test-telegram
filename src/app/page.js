@@ -33,7 +33,7 @@ const TestPage = () => {
 
   useEffect(() => {
     // Get the button element by its ID
-    var button = document.getElementsByClassName("tgme_widget_login_button");
+    var button = document.getElementById("widget_login");
 
     console.log("button", button);
     // Remove all children nodes from the button
