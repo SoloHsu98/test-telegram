@@ -60,12 +60,14 @@ const TestPage = () => {
           }}
         />
       </div>
-      {/* <TelegramLoginButton
-        dataOnauth={handleTelegramResponse}
-        botName="solo_telegram_bot"
-      >
-        <span>hello</span>
-      </TelegramLoginButton> */}
+      <div className="wrapper">
+        <TelegramLoginButton
+          dataOnauth={handleTelegramResponse}
+          botName="solo_telegram_bot"
+        >
+          <span>hello</span>
+        </TelegramLoginButton>
+      </div>
     </div>
   );
 };
