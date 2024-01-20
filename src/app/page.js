@@ -96,7 +96,7 @@ const TestPage = () => {
           className="sec-btn"
         />
 
-        <SocialIcon
+        {/* <SocialIcon
           network="telegram" // Pass the social URL dynamically
           label="social url"
           className="cursor-pointer z-1"
@@ -108,9 +108,8 @@ const TestPage = () => {
             zIndex: 1,
             top: "0",
             left: "0",
-            border: "1px solid green",
           }}
-        />
+        /> */}
       </div>
     </div>
   );

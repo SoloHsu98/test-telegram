@@ -115,6 +115,7 @@ a {
   height: 50px;
   position: relative;
   border-radius: 50%;
+  overflow: hidden;
 }
 .first-btn {
   position: absolute;
